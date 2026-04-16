@@ -1,0 +1,116 @@
+[
+  {
+    "id": "user-1",
+    "email": "ahmed@example.com",
+    "password": "password123",
+    "name": "Ahmed Hassan",
+    "role": "student",
+    "profile": {
+      "education": "Cairo University - Computer Science",
+      "skills": [
+        "JavaScript",
+        "React",
+        "Node.js"
+      ],
+      "projects": [
+        {
+          "title": "E-commerce Platform",
+          "description": "Built with React and Firebase"
+        }
+      ],
+      "cvFilename": "ahmed-cv.pdf",
+      "location": "Cairo"
+    }
+  },
+  {
+    "id": "user-2",
+    "email": "fatima@example.com",
+    "password": "password123",
+    "name": "Fatima Mohamed",
+    "role": "student",
+    "profile": {
+      "education": "AUC - Business Administration",
+      "skills": [
+        "Marketing",
+        "Data Analysis",
+        "Excel"
+      ],
+      "projects": [
+        {
+          "title": "Market Research Tool",
+          "description": "Analyzed market trends for startups"
+        }
+      ],
+      "cvFilename": "fatima-cv.pdf",
+      "location": "New Cairo"
+    }
+  },
+  {
+    "id": "user-3",
+    "email": "startup@example.com",
+    "password": "password123",
+    "name": "TechStartup Inc",
+    "role": "employer",
+    "profile": {
+      "companyName": "TechStartup Inc",
+      "description": "Innovative tech startup based in Cairo",
+      "location": "Cairo"
+    }
+  },
+  {
+    "id": "user-154c0469-7730-4a90-b1a5-4d81321bedb5",
+    "email": "Fady@gmail.com",
+    "password": "123456789",
+    "name": "fady saad",
+    "role": "student",
+    "profile": {
+      "education": "",
+      "skills": [],
+      "projects": [],
+      "cvFilename": null,
+      "location": "Giza"
+    }
+  },
+  {
+    "id": "user-33f979cf-6f9c-45cf-a2c5-e01c83bc845e",
+    "email": "Nash@gmail.com",
+    "password": "123456789",
+    "name": "Nash Dy",
+    "role": "student",
+    "profile": {
+      "education": "AUC",
+      "skills": [
+        "HTML/CSS",
+        "SEO",
+        "Figma"
+      ],
+      "projects": [],
+      "cvFilename": "cv-user-33f979cf-6f9c-45cf-a2c5-e01c83bc845e-1776343728709-Milestone 2 SWE.pdf",
+      "location": "Cairo",
+      "cvFilePath": "/Users/fadysaad/Documents/GitHub/test-hirely/Hirely/backend/uploads/cv/cv-user-33f979cf-6f9c-45cf-a2c5-e01c83bc845e-1776343728709-Milestone 2 SWE.pdf"
+    }
+  },
+  {
+    "id": "user-3cd4e41c-8265-49d7-936f-1f2eaed3393f",
+    "email": "sameh@gmail.com",
+    "password": "123456789",
+    "name": "sameh ",
+    "role": "student",
+    "profile": {
+      "education": "AUC",
+      "skills": [
+        "JavaScript",
+        "Python",
+        "Communication"
+      ],
+      "projects": [
+        {
+          "title": "test",
+          "description": ""
+        }
+      ],
+      "cvFilename": null,
+      "location": "Giza"
+    }
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "job-1",
+    "employerId": "user-3",
+    "title": "Junior Frontend Developer",
+    "type": "internship",
+    "field": "Technology",
+    "location": "Cairo",
+    "description": "Build responsive web interfaces using React and modern JavaScript.",
+    "requirements": [
+      "React",
+      "JavaScript",
+      "CSS"
+    ],
+    "salary": "2000-3000 EGP",
+    "createdAt": "2024-04-01T00:00:00.000Z"
+  },
+  {
+    "id": "job-2",
+    "employerId": "user-3",
+    "title": "Content Marketing Intern",
+    "type": "internship",
+    "field": "Marketing",
+    "location": "New Cairo",
+    "description": "Create engaging content for our digital platforms.",
+    "requirements": [
+      "Content Writing",
+      "SEO",
+      "Social Media"
+    ],
+    "salary": "1500-2000 EGP",
+    "createdAt": "2024-04-02T00:00:00.000Z"
+  },
+  {
+    "id": "job-3",
+    "employerId": "user-3",
+    "title": "Data Analytics Intern",
+    "type": "entry-level",
+    "field": "Technology",
+    "location": "Cairo",
+    "description": "Analyze business data and create dashboards.",
+    "requirements": [
+      "Excel",
+      "SQL",
+      "Data Visualization"
+    ],
+    "salary": "2500-3500 EGP",
+    "createdAt": "2024-04-03T00:00:00.000Z"
+  },
+  {
+    "id": "job-4",
+    "employerId": "user-3",
+    "title": "Business Development Intern",
+    "type": "internship",
+    "field": "Business",
+    "location": "Giza",
+    "description": "Support business growth initiatives and partner outreach.",
+    "requirements": [
+      "Communication",
+      "Sales",
+      "CRM"
+    ],
+    "salary": "1800-2500 EGP",
+    "createdAt": "2024-04-04T00:00:00.000Z"
+  },
+  {
+    "id": "job-5",
+    "employerId": "user-3",
+    "title": "UI/UX Design Intern",
+    "type": "internship",
+    "field": "Design",
+    "location": "Cairo",
+    "description": "Design user interfaces and improve user experiences.",
+    "requirements": [
+      "Figma",
+      "UI Design",
+      "Prototyping"
+    ],
+    "salary": "2000-2800 EGP",
+    "createdAt": "2024-04-05T00:00:00.000Z"
+  },
+  {
+    "id": "job-6",
+    "employerId": "user-3",
+    "title": "Backend Developer",
+    "type": "entry-level",
+    "field": "Technology",
+    "location": "Cairo",
+    "description": "Develop APIs and server-side applications.",
+    "requirements": [
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ],
+    "salary": "3000-4000 EGP",
+    "createdAt": "2024-04-06T00:00:00.000Z"
+  },
+  {
+    "id": "job-ec01d40b-a6d0-435d-9bb1-e99073585aef",
+    "employerId": "user-3",
+    "title": "Test Job",
+    "type": "entry-level",
+    "field": "Business",
+    "location": "Hurghada",
+    "description": "Test job ",
+    "requirements": [
+      "Communication",
+      "People Skills",
+      "Test"
+    ],
+    "salary": "5000-8000",
+    "createdAt": "2026-04-15T21:00:36.151Z"
+  }
+]

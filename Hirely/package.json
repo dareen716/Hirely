@@ -1,0 +1,28 @@
+{
+  "name": "hirely-mvp",
+  "version": "1.0.0",
+  "description": "Job and internship platform MVP for students and employers in Egypt - Sprint 1",
+  "private": true,
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start": "chmod +x start.sh && ./start.sh"
+  },
+  "keywords": [
+    "jobs",
+    "internships",
+    "students",
+    "egypt",
+    "platform",
+    "mvp"
+  ],
+  "author": "Hirely",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.15.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "react": "^19.2.5",
+    "uuid": "^13.0.0"
+  }
+}
