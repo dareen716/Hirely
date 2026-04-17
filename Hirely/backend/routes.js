@@ -61,4 +61,36 @@ router.get('/skills', (req, res) => {
   res.json({ skills: getSkills() });
 });
 
+router.post('/applications', async (req, res) => {
+  const { studentID, jobID } = req.body;
+
+  try {
+    // Step 1: Get student profile (mock for now)
+    const studentProfile = { id: studentID, name: "Test Student" };
+    if (!studentProfile) {
+      return res.status(404).json({ success: false, message: "Student not found" });
+    }
+
+    // Step 2: Save application (mock DB insert)
+    const application = {
+      id: Date.now(),
+      studentID,
+      jobID,
+      date: new Date()
+    };
+    console.log("Application saved:", application);
+
+    // Step 3: Notify student (mock notification)
+    console.log(`Notification: Student ${studentID} applied for Job ${jobID}`);
+
+    // Step 4: Respond to frontend
+    res.json({ success: true, application });
+  } catch (error) {
+    console.error("Error saving application:", error);
+    res.status(500).json({ success: false, message: "Server error" });
+  }
+});
+
+
+
 export default router;

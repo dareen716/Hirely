@@ -10,6 +10,8 @@ export default function JobListingsPage() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { user, logout, isAuthenticated, loading: authLoading } = useAuth();
+  const [appliedJobs, setAppliedJobs] = useState([]);
+
 
   const [jobs, setJobs] = useState([]);
   const [filters, setFilters] = useState({
@@ -23,6 +25,24 @@ export default function JobListingsPage() {
     fields: []
   });
   const [loading, setLoading] = useState(true);
+  const handleApply = async (jobID) => {
+  try {
+    const response = await jobsService.applyForJob({
+      studentID: user.id,
+      jobID
+    });
+
+    if (response.data.success) {
+      alert("Application Submitted!");
+      setAppliedJobs((prev) => [...prev, jobID]); 
+    } else {
+      alert("Failed to submit application.");
+    }
+  } catch (error) {
+    console.error("Error applying for job:", error);
+    alert("Something went wrong.");
+  }
+};
 
   useEffect(() => {
     if (authLoading) {
@@ -222,9 +242,17 @@ export default function JobListingsPage() {
                         <p className="text-sm text-gray-600">📍 {job.location}</p>
                         <p className="text-sm font-semibold text-gray-900 mt-1">{job.salary}</p>
                       </div>
-                      <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium text-sm disabled" title="Applications coming in Sprint 2">
-                        View Details
-                      </button>
+                     <button
+                 onClick={() => handleApply(job.id)}
+                 disabled={appliedJobs.includes(job.id)} 
+                 className={`px-4 py-2 rounded-lg font-medium text-sm 
+                ${appliedJobs.includes(job.id) 
+                ? "bg-gray-400 text-white cursor-not-allowed" 
+          : "bg-blue-600 text-white hover:bg-blue-700"}`}
+    >
+      {appliedJobs.includes(job.id) ? "Applied" : "Apply for Job"}
+        </button>
+
                     </div>
                   </div>
                 ))}

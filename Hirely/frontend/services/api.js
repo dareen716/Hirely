@@ -55,7 +55,10 @@ export const jobsService = {
     api.post('/jobs', jobData),
   
   getFilterOptions: () =>
-    api.get('/jobs-filters')
+    api.get('/jobs-filters'),
+
+  applyForJob: ({ studentID, jobID }) =>
+    api.post('/applications', { studentID, jobID })
 };
 
 // Skills service
