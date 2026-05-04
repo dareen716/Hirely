@@ -112,5 +112,206 @@
       "cvFilename": null,
       "location": "Giza"
     }
+  },
+  {
+    "id": "user-e6c0777c-3ea2-4c9b-b20b-d4461f1bd351",
+    "email": "Testemail@gmail.com",
+    "password": "123456789",
+    "name": "Test company 2",
+    "role": "employer",
+    "profile": {
+      "companyName": "Test company 2",
+      "description": "test 234 ",
+      "location": "cairo"
+    }
+  },
+  {
+    "id": "user-f98b8ac4-299e-461a-8e63-f7c71c58e3e8",
+    "email": "student@gmail.com",
+    "password": "123456789",
+    "name": "Test Student",
+    "role": "student",
+    "profile": {
+      "education": "AUC",
+      "skills": [
+        "JavaScript",
+        "Data Analysis",
+        "UI Design",
+        "Communication",
+        "Marketing",
+        "Node.js"
+      ],
+      "projects": [
+        {
+          "title": "project",
+          "description": "test"
+        }
+      ],
+      "cvFilename": "cv-user-f98b8ac4-299e-461a-8e63-f7c71c58e3e8-1776514893321-Sprint1_Deliverables_M3 (1).pdf",
+      "location": "Giza",
+      "cvFilePath": "/Users/fadysaad/Documents/GitHub/Hirely/Hirely/backend/uploads/cv/cv-user-f98b8ac4-299e-461a-8e63-f7c71c58e3e8-1776514893321-Sprint1_Deliverables_M3 (1).pdf"
+    }
+  },
+  {
+    "id": "user-679b062d-c3c6-4574-b449-ece1b910ad02",
+    "email": "3@gmail.com",
+    "password": "123456789",
+    "name": "Test company 3",
+    "role": "employer",
+    "profile": {
+      "companyName": "Test company 3",
+      "description": "description test",
+      "location": "Cairo"
+    }
+  },
+  {
+    "id": "user-2a28edb8-5611-485b-a99d-466f42b1b7ea",
+    "email": "student3@gmail.com",
+    "password": "123456789",
+    "name": "student test ",
+    "role": "student",
+    "profile": {
+      "education": "AUC",
+      "skills": [
+        "SQL",
+        "Project Management",
+        "Content Writing",
+        "REST APIs"
+      ],
+      "projects": [
+        {
+          "title": "title ",
+          "description": "project dis"
+        }
+      ],
+      "cvFilename": "cv-user-2a28edb8-5611-485b-a99d-466f42b1b7ea-1776524668584-Sprint1_Deliverables_M3 (1).pdf",
+      "location": "Giza",
+      "cvFilePath": "/Users/fadysaad/Documents/GitHub/Hirely/Hirely/backend/uploads/cv/cv-user-2a28edb8-5611-485b-a99d-466f42b1b7ea-1776524668584-Sprint1_Deliverables_M3 (1).pdf"
+    }
+  },
+  {
+    "id": "user-ed024176-3432-48a8-b0aa-df4636b7d804",
+    "email": "test@gmail.com",
+    "password": "123456789",
+    "name": "Test company 4",
+    "role": "employer",
+    "profile": {
+      "companyName": "Test company 4",
+      "description": "",
+      "location": ""
+    }
+  },
+  {
+    "id": "user-298c94b3-735c-4ff8-8b69-8efa1b76797f",
+    "email": "email@email.com",
+    "password": "123456789",
+    "name": "test student",
+    "role": "student",
+    "profile": {
+      "education": "",
+      "skills": [],
+      "projects": [],
+      "cvFilename": null,
+      "location": ""
+    }
+  },
+  {
+    "id": "user-ec128624-feaf-4b12-a64c-f41b13c35f0d",
+    "email": "gmail@gmail.com",
+    "password": "123456789",
+    "name": "Name of company",
+    "role": "employer",
+    "profile": {
+      "companyName": "Name of company",
+      "description": "des",
+      "location": "Giza"
+    }
+  },
+  {
+    "id": "user-c3d6ca2a-fd73-4666-b158-c9c688000a8a",
+    "email": "Gmail@student.com",
+    "password": "123456789",
+    "name": "Student name",
+    "role": "student",
+    "profile": {
+      "education": "AUC",
+      "skills": [
+        "JavaScript",
+        "SEO",
+        "UI Design"
+      ],
+      "projects": [
+        {
+          "title": "project title",
+          "description": ""
+        }
+      ],
+      "cvFilename": "cv-user-c3d6ca2a-fd73-4666-b158-c9c688000a8a-1776525789555-Sprint1_Deliverables_M3 (1).pdf",
+      "location": "Giza",
+      "cvFilePath": "/Users/fadysaad/Documents/GitHub/Hirely/Hirely/backend/uploads/cv/cv-user-c3d6ca2a-fd73-4666-b158-c9c688000a8a-1776525789555-Sprint1_Deliverables_M3 (1).pdf"
+    }
+  },
+  {
+    "id": "user-e7a04a81-7b0b-4de4-952f-5c0f9dfaae9f",
+    "email": "mariamyass@gmail.com",
+    "password": "123",
+    "name": "mary",
+    "role": "employer",
+    "profile": {
+      "companyName": "mary",
+      "description": "",
+      "location": ""
+    }
+  },
+  {
+    "id": "user-0caf9f5e-00e6-49ee-ae80-3dc40c3ed9e5",
+    "email": "Test12345@gmail.com",
+    "password": "123456789",
+    "name": "test12345",
+    "role": "student",
+    "profile": {
+      "education": "Auc",
+      "skills": [
+        "JavaScript",
+        "Project Management",
+        "Communication",
+        "Marketing"
+      ],
+      "projects": [
+        {
+          "title": "test project",
+          "description": "description"
+        }
+      ],
+      "cvFilename": null,
+      "location": "Cairo"
+    }
+  },
+  {
+    "id": "user-fc0c4463-71c0-479c-bc9d-76da90cda200",
+    "email": "New@gmail.com",
+    "password": "123",
+    "name": "New Test",
+    "role": "student",
+    "profile": {
+      "education": "AUC",
+      "skills": [
+        "JavaScript",
+        "Python",
+        "Communication",
+        "UI Design",
+        "Project Management",
+        "Express.js"
+      ],
+      "projects": [
+        {
+          "title": "project",
+          "description": "description"
+        }
+      ],
+      "cvFilename": "cv-user-fc0c4463-71c0-479c-bc9d-76da90cda200-1777920562765-Guest Speaker #3 reflection - Google Docs.pdf",
+      "location": "Cairo",
+      "cvFilePath": "/Users/fadysaad/Documents/GitHub/Hirely/Hirely/backend/uploads/cv/cv-user-fc0c4463-71c0-479c-bc9d-76da90cda200-1777920562765-Guest Speaker #3 reflection - Google Docs.pdf"
+    }
   }
 ]

@@ -47,3 +47,12 @@ export const getSessions = () => readJson(sessionsFile, {});
 export const saveSessions = (sessions) => writeJson(sessionsFile, sessions);
 
 export const getSkills = () => readJson(skillsFile, []);
+
+
+const applicationsFile = path.join(dataDir, 'applications.json');
+
+export const getApplications = () =>
+  readJson(applicationsFile, []);
+
+export const saveApplications = (applications) =>
+  writeJson(applicationsFile, applications);

@@ -26,23 +26,22 @@ export default function JobListingsPage() {
   });
   const [loading, setLoading] = useState(true);
   const handleApply = async (jobID) => {
-  try {
-    const response = await jobsService.applyForJob({
-      studentID: user.id,
-      jobID
-    });
-
-    if (response.data.success) {
-      alert("Application Submitted!");
-      setAppliedJobs((prev) => [...prev, jobID]); 
-    } else {
-      alert("Failed to submit application.");
+    try {
+      const response = await jobsService.applyForJob({
+        studentId: user.userId,   // ✅ confirmed from your log
+        jobId: jobID
+      });
+  
+      if (response.data.success) {
+        alert("Application Submitted!");
+        setAppliedJobs(prev => [...prev, jobID]);
+      }
+    } catch (error) {
+      alert(error.response?.data?.message || "Something went wrong.");
     }
-  } catch (error) {
-    console.error("Error applying for job:", error);
-    alert("Something went wrong.");
-  }
-};
+  };
+  
+  
 
   useEffect(() => {
     if (authLoading) {

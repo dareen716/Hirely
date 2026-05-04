@@ -110,5 +110,61 @@
     ],
     "salary": "5000-8000",
     "createdAt": "2026-04-15T21:00:36.151Z"
+  },
+  {
+    "id": "job-0f027d65-b03a-4238-a65b-6b32de6eef9e",
+    "employerId": "user-e6c0777c-3ea2-4c9b-b20b-d4461f1bd351",
+    "title": "Job title test",
+    "type": "entry-level",
+    "field": "Business",
+    "location": "Cairo",
+    "description": "test 12345",
+    "requirements": [
+      "test 12345"
+    ],
+    "salary": "5000-8000",
+    "createdAt": "2026-04-18T12:19:40.674Z"
+  },
+  {
+    "id": "job-c1ac00fc-3ed5-4277-b447-1e0937d4c81f",
+    "employerId": "user-679b062d-c3c6-4574-b449-ece1b910ad02",
+    "title": "Junior dev",
+    "type": "internship",
+    "field": "Technology",
+    "location": "Cairo",
+    "description": "descrpition test",
+    "requirements": [
+      "test"
+    ],
+    "salary": "5000-8000",
+    "createdAt": "2026-04-18T15:02:07.087Z"
+  },
+  {
+    "id": "job-943e6d8b-a959-44f6-b28f-8af9915c0f4b",
+    "employerId": "user-679b062d-c3c6-4574-b449-ece1b910ad02",
+    "title": "Junior dev",
+    "type": "internship",
+    "field": "Technology",
+    "location": "Cairo",
+    "description": "descrpition test",
+    "requirements": [
+      "test"
+    ],
+    "salary": "5000-8000",
+    "createdAt": "2026-04-18T15:02:08.127Z"
+  },
+  {
+    "id": "job-f3c0e582-8484-448d-90a1-e150efc2e92d",
+    "employerId": "user-ec128624-feaf-4b12-a64c-f41b13c35f0d",
+    "title": "Job title 1",
+    "type": "entry-level",
+    "field": "Design",
+    "location": "New Cairo",
+    "description": "Description",
+    "requirements": [
+      "skills"
+    ],
+    "salary": "5000-8000",
+    "createdAt": "2026-04-18T15:21:54.792Z"
   }
 ]

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "application-1777924810023",
+    "jobId": "job-f3c0e582-8484-448d-90a1-e150efc2e92d",
+    "employerId": "user-ec128624-feaf-4b12-a64c-f41b13c35f0d",
+    "studentId": "user-fc0c4463-71c0-479c-bc9d-76da90cda200",
+    "student": {
+      "id": "user-fc0c4463-71c0-479c-bc9d-76da90cda200",
+      "name": "New Test",
+      "email": "New@gmail.com"
+    },
+    "cv": {
+      "fileName": "cv-user-fc0c4463-71c0-479c-bc9d-76da90cda200-1777920562765-Guest Speaker #3 reflection - Google Docs.pdf",
+      "filePath": "/Users/fadysaad/Documents/GitHub/Hirely/Hirely/backend/uploads/cv/cv-user-fc0c4463-71c0-479c-bc9d-76da90cda200-1777920562765-Guest Speaker #3 reflection - Google Docs.pdf"
+    },
+    "status": "applied",
+    "appliedAt": "2026-05-04T20:00:10.023Z"
+  }
+]
