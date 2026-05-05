@@ -166,5 +166,17 @@
     ],
     "salary": "5000-8000",
     "createdAt": "2026-04-18T15:21:54.792Z"
+  },
+  {
+    "id": "job-9208c52c-ae72-4e48-9b0a-ed2c907820f2",
+    "employerId": "user-b73a42cc-0c12-4c39-8eb0-d6faeed45da0",
+    "title": "Sales Person",
+    "type": "entry-level",
+    "field": "Business",
+    "location": "Cairo",
+    "description": "Pharmacist",
+    "requirements": [],
+    "salary": "5000-8000",
+    "createdAt": "2026-05-05T21:08:37.634Z"
   }
 ]

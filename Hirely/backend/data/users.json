@@ -283,8 +283,9 @@
           "description": "description"
         }
       ],
-      "cvFilename": null,
-      "location": "Cairo"
+      "cvFilename": "cv-user-0caf9f5e-00e6-49ee-ae80-3dc40c3ed9e5-1778015433839-Topographic+Maps+Assignment+Lab-9.pdf",
+      "location": "Cairo",
+      "cvFilePath": "/Users/fadysaad/Documents/GitHub/Hirely/Hirely/backend/uploads/cv/cv-user-0caf9f5e-00e6-49ee-ae80-3dc40c3ed9e5-1778015433839-Topographic+Maps+Assignment+Lab-9.pdf"
     }
   },
   {
@@ -312,6 +313,18 @@
       "cvFilename": "cv-user-fc0c4463-71c0-479c-bc9d-76da90cda200-1777920562765-Guest Speaker #3 reflection - Google Docs.pdf",
       "location": "Cairo",
       "cvFilePath": "/Users/fadysaad/Documents/GitHub/Hirely/Hirely/backend/uploads/cv/cv-user-fc0c4463-71c0-479c-bc9d-76da90cda200-1777920562765-Guest Speaker #3 reflection - Google Docs.pdf"
+    }
+  },
+  {
+    "id": "user-b73a42cc-0c12-4c39-8eb0-d6faeed45da0",
+    "email": "Martiros@gmail.com",
+    "password": "123",
+    "name": "Martiros",
+    "role": "employer",
+    "profile": {
+      "companyName": "Martiros",
+      "description": "Pharma",
+      "location": "Cairo"
     }
   }
 ]

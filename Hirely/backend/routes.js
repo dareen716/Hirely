@@ -62,6 +62,43 @@ router.get('/skills', (req, res) => {
   res.json({ skills: getSkills() });
 });
 
+router.get('/applications', (req, res) => {
+  const { employerId, jobId } = req.query;
+
+  if (employerId) {
+    const applications = applicationsController.getApplicationsByEmployerId(employerId);
+    return res.json({ success: true, applications });
+  }
+
+  if (jobId) {
+    const applications = applicationsController.getApplicationsByJobId(jobId);
+    return res.json({ success: true, applications });
+  }
+
+  const applications = applicationsController.getApplications();
+  return res.json({ success: true, applications });
+});
+
+router.patch('/applications/:applicationId/status', (req, res) => {
+  const { applicationId } = req.params;
+  const { status } = req.body;
+
+  if (!['shortlisted', 'rejected'].includes(status)) {
+    return res.status(400).json({
+      success: false,
+      message: 'Invalid status value. Allowed values are "shortlisted" or "rejected".'
+    });
+  }
+
+  const result = applicationsController.updateApplicationStatus(applicationId, status);
+  if (!result.success) {
+    const statusCode = result.error === 'Application not found.' ? 404 : 400;
+    return res.status(statusCode).json({ success: false, message: result.error });
+  }
+
+  return res.json({ success: true, application: result.application });
+});
+
 router.post('/applications', (req, res) => {
   try {
     const { jobId, studentId } = req.body;

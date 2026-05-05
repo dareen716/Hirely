@@ -57,13 +57,29 @@ export const jobsService = {
   getFilterOptions: () =>
     api.get('/jobs-filters'),
 
+  getApplicationsByEmployer: (employerId) =>
+    api.get(`/applications?employerId=${employerId}`),
+
+  getApplicationsByJob: (jobId) =>
+    api.get(`/applications?jobId=${jobId}`),
+
+  updateApplicationStatus: (applicationId, status) => {
+    if (!['shortlisted', 'rejected'].includes(status)) {
+      throw new Error('Status must be either "shortlisted" or "rejected"');
+    }
+    return api.patch(`/applications/${applicationId}/status`, { status });
+  },
+
   applyForJob: ({ studentId, jobId }) =>
-    api.post('/applications', { studentId, jobId })};
+    api.post('/applications', { studentId, jobId })
+};
 
 // Skills service
 export const skillsService = {
   getSkills: () =>
     api.get('/skills')
 };
+
+
 
 export default api;

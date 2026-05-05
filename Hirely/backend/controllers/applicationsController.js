@@ -27,6 +27,7 @@ const readApplications = () => loadApplications();
 const writeApplications = (applications) =>
   saveApplications(applications);
 
+const ALLOWED_STATUS_VALUES = ['shortlisted', 'rejected'];
 
 
 /**
@@ -86,6 +87,16 @@ const getApplicationsByJobId = (jobId) => {
 };
 
 /**
+ * Retrieves applications by employer ID.
+ * @param {string} employerId - The ID of the employer.
+ * @returns {Array} List of applications for the specified employer.
+ */
+const getApplicationsByEmployerId = (employerId) => {
+  const applications = readApplications();
+  return applications.filter((application) => application.employerId === employerId);
+};
+
+/**
  * Retrieves applications by student ID.
  * @param {string} studentId - The ID of the student.
  * @returns {Array} List of applications for the specified student.
@@ -95,10 +106,50 @@ const getApplicationsByStudentId = (studentId) => {
   return applications.filter((application) => application.studentId === studentId);
 };
 
+/**
+ * Updates application status.
+ * Allowed transitions from "applied" are: "shortlisted" or "rejected".
+ * @param {string} applicationId - Application ID.
+ * @param {string} status - New status.
+ * @returns {Object} Result object containing updated application or error.
+ */
+const updateApplicationStatus = (applicationId, status) => {
+  if (!ALLOWED_STATUS_VALUES.includes(status)) {
+    return {
+      success: false,
+      error: 'Invalid status value. Allowed values are "shortlisted" or "rejected".'
+    };
+  }
+
+  const applications = readApplications();
+  const applicationIndex = applications.findIndex((application) => application.id === applicationId);
+
+  if (applicationIndex === -1) {
+    return { success: false, error: 'Application not found.' };
+  }
+
+  const currentStatus = applications[applicationIndex].status;
+  if (currentStatus !== 'applied') {
+    return { success: false, error: 'Only applications in "applied" status can be updated.' };
+  }
+
+  const updatedApplication = {
+    ...applications[applicationIndex],
+    status
+  };
+
+  applications[applicationIndex] = updatedApplication;
+  writeApplications(applications);
+
+  return { success: true, application: updatedApplication };
+};
+
 export {
     createApplication,
     getApplications,
     getApplicationsByJobId,
+    getApplicationsByEmployerId,
     getApplicationsByStudentId,
+    updateApplicationStatus,
   };
   ``

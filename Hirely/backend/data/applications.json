@@ -15,5 +15,56 @@
     },
     "status": "applied",
     "appliedAt": "2026-05-04T20:00:10.023Z"
+  },
+  {
+    "id": "application-1777937391017",
+    "jobId": "job-4",
+    "employerId": "user-3",
+    "studentId": "user-fc0c4463-71c0-479c-bc9d-76da90cda200",
+    "student": {
+      "id": "user-fc0c4463-71c0-479c-bc9d-76da90cda200",
+      "name": "New Test",
+      "email": "New@gmail.com"
+    },
+    "cv": {
+      "fileName": "cv-user-fc0c4463-71c0-479c-bc9d-76da90cda200-1777920562765-Guest Speaker #3 reflection - Google Docs.pdf",
+      "filePath": "/Users/fadysaad/Documents/GitHub/Hirely/Hirely/backend/uploads/cv/cv-user-fc0c4463-71c0-479c-bc9d-76da90cda200-1777920562765-Guest Speaker #3 reflection - Google Docs.pdf"
+    },
+    "status": "applied",
+    "appliedAt": "2026-05-04T23:29:51.017Z"
+  },
+  {
+    "id": "application-1778014497130",
+    "jobId": "job-5",
+    "employerId": "user-3",
+    "studentId": "user-fc0c4463-71c0-479c-bc9d-76da90cda200",
+    "student": {
+      "id": "user-fc0c4463-71c0-479c-bc9d-76da90cda200",
+      "name": "New Test",
+      "email": "New@gmail.com"
+    },
+    "cv": {
+      "fileName": "cv-user-fc0c4463-71c0-479c-bc9d-76da90cda200-1777920562765-Guest Speaker #3 reflection - Google Docs.pdf",
+      "filePath": "/Users/fadysaad/Documents/GitHub/Hirely/Hirely/backend/uploads/cv/cv-user-fc0c4463-71c0-479c-bc9d-76da90cda200-1777920562765-Guest Speaker #3 reflection - Google Docs.pdf"
+    },
+    "status": "applied",
+    "appliedAt": "2026-05-05T20:54:57.130Z"
+  },
+  {
+    "id": "application-1778015475449",
+    "jobId": "job-9208c52c-ae72-4e48-9b0a-ed2c907820f2",
+    "employerId": "user-b73a42cc-0c12-4c39-8eb0-d6faeed45da0",
+    "studentId": "user-0caf9f5e-00e6-49ee-ae80-3dc40c3ed9e5",
+    "student": {
+      "id": "user-0caf9f5e-00e6-49ee-ae80-3dc40c3ed9e5",
+      "name": "test12345",
+      "email": "Test12345@gmail.com"
+    },
+    "cv": {
+      "fileName": "cv-user-0caf9f5e-00e6-49ee-ae80-3dc40c3ed9e5-1778015433839-Topographic+Maps+Assignment+Lab-9.pdf",
+      "filePath": "/Users/fadysaad/Documents/GitHub/Hirely/Hirely/backend/uploads/cv/cv-user-0caf9f5e-00e6-49ee-ae80-3dc40c3ed9e5-1778015433839-Topographic+Maps+Assignment+Lab-9.pdf"
+    },
+    "status": "rejected",
+    "appliedAt": "2026-05-05T21:11:15.449Z"
   }
 ]

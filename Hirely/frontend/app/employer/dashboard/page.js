@@ -65,6 +65,9 @@ export default function EmployerDashboard() {
             <Link href="/employer/profile" className="text-gray-700 hover:text-blue-600 font-medium">
               Company Profile
             </Link>
+            <Link href="/employer/applicants" className="text-gray-700 hover:text-blue-600 font-medium">
+              View Applicants
+            </Link>
             <button
               onClick={logout}
               className="px-4 py-2 text-red-600 hover:text-red-700 font-medium"
