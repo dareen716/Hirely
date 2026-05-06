@@ -187,9 +187,9 @@ export default function EmployerApplicantsPage() {
                       </td>
                       <td className="px-4 py-4 text-sm text-gray-700">{applicant.jobTitle}</td>
                       <td className="px-4 py-4 text-sm">
-                        {applicant.cvUrl || applicant.cv?.filePath ? (
+                        {applicant.cv?.fileName ? (
                           <a
-                            href={applicant.cvUrl || applicant.cv.filePath}
+                            href={`http://localhost:5001/uploads/cv/${applicant.cv.fileName}`}
                             target="_blank"
                             rel="noreferrer"
                             className="text-blue-600 hover:text-blue-700 font-semibold"

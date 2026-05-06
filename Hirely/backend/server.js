@@ -11,6 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
+app.use('/uploads', express.static('uploads'));
 app.use('/api', routes);
 
 // Health check
