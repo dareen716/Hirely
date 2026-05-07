@@ -1,10 +1,10 @@
-# 🎓 Hirely MVP - Sprint 1
+#  Hirely MVP - Sprint 1
 
 A **job and internship platform** for undergraduate students and fresh graduates in Egypt. This is a **fully functional prototype** with core features only — ready to extend with a database and additional features in future sprints.
 
 ---
 
-## ⚡ Quick Start
+##  Quick Start
 
 ### Option 1: Automated Setup (Mac/Linux)
 ```bash
@@ -30,7 +30,7 @@ npm run dev
 
 ---
 
-## 🔐 Demo Credentials
+##  Demo Credentials
 
 Try these accounts (no registration needed):
 
@@ -43,7 +43,7 @@ Demo login buttons available on `/login` page.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 hirely-mvp/
@@ -76,9 +76,9 @@ hirely-mvp/
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🎓 For Students
+###  For Students
 - ✅ Register with email/password
 - ✅ View all job listings
 - ✅ Filter jobs by: type (internship/entry-level), location, field
@@ -86,14 +86,14 @@ hirely-mvp/
 - ✅ Upload CV (PDF — stored on server filesystem)
 - ✅ Dashboard with profile summary
 
-### 🏢 For Employers
+###  For Employers
 - ✅ Register company account
 - ✅ Post internship & entry-level jobs
 - ✅ Edit company profile and description
 - ✅ View all posted jobs
 - ✅ Dashboard with job management
 
-### 🔑 For Everyone
+###  For Everyone
 - ✅ Secure login/logout
 - ✅ Password reset (mocked email)
 - ✅ Role-based access control
@@ -101,7 +101,7 @@ hirely-mvp/
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -113,7 +113,7 @@ hirely-mvp/
 
 ---
 
-## 📡 API Endpoints
+##  API Endpoints
 
 All endpoints return JSON and are available at `http://localhost:5001/api`
 
@@ -148,7 +148,7 @@ GET    /api/skills                     # Get all available skills
 
 ---
 
-## 🗂️ Mock Data
+## Mock Data
 
 The app includes pre-loaded mock data in `backend/mock-data.js`:
 - **2 students** with profiles
@@ -160,7 +160,7 @@ Data is **stored in-memory** and resets when the backend restarts.
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 ### Deploy to Vercel
 ```bash
@@ -183,14 +183,14 @@ NEXT_PUBLIC_API_URL=http://localhost:5001/api
 
 ---
 
-## ⚠️ Important Notes
+## Important Notes
 
 ### What's Mocked (MVP Only)
-- 🔐 **Authentication**: Plain text passwords, in-memory sessions (NOT secure)
-- 💾 **Database**: All data in-memory, lost on server restart
-- 📁 **File Upload**: CV upload stores the PDF on the backend and saves the filename in the student profile
-- 📧 **Email**: Password reset doesn't send emails
-- 📱 **Applications**: Job applications not yet implemented
+-  **Authentication**: Plain text passwords, in-memory sessions (NOT secure)
+-  **Database**: All data in-memory, lost on server restart
+- **File Upload**: CV upload stores the PDF on the backend and saves the filename in the student profile
+-  **Email**: Password reset doesn't send emails
+-  **Applications**: Job applications not yet implemented
 
 ### Ready for Production? No
 This is a **prototype MVP** — do NOT deploy to production without:
@@ -206,7 +206,7 @@ This is a **prototype MVP** — do NOT deploy to production without:
 
 ---
 
-## 🎯 Sprint 1 Scope (Completed)
+##  Sprint 1 Scope (Completed)
 
 ✅ User registration (student & employer)
 ✅ Login & logout
@@ -219,7 +219,7 @@ This is a **prototype MVP** — do NOT deploy to production without:
 
 ---
 
-## 🔮 Sprint 2+ (Out of Scope)
+##  Sprint 2+ (Out of Scope)
 
 ❌ Real database integration
 ❌ Job applications & tracking
@@ -234,7 +234,7 @@ This is a **prototype MVP** — do NOT deploy to production without:
 
 ---
 
-## 📖 Documentation
+## Documentation
 
 - **[SETUP.md](./SETUP.md)** - Detailed setup & troubleshooting guide
 - **[frontend/README.md](./frontend/README.md)** - Frontend architecture
@@ -242,7 +242,7 @@ This is a **prototype MVP** — do NOT deploy to production without:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 This is a learning project. To extend it:
 
@@ -253,10 +253,10 @@ This is a learning project. To extend it:
 
 ---
 
-## 📝 License
+## License
 
 This is a demonstration project for learning purposes.
 
 ---
 
-**Happy building! 🚀** Ready to extend? Check out [SETUP.md](./SETUP.md) for detailed instructions.
+**Happy building! ** Ready to extend? Check out [SETUP.md](./SETUP.md) for detailed instructions.
