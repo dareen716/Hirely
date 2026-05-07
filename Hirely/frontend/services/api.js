@@ -66,6 +66,9 @@ export const jobsService = {
   getApplicationsByJob: (jobId) =>
     api.get(`/applications?jobId=${jobId}`),
 
+  getApplicationsByStudent: (studentId) =>
+    api.get(`/applications?studentId=${studentId}`),
+
   updateApplicationStatus: (applicationId, status) => {
     if (!['shortlisted', 'rejected'].includes(status)) {
       throw new Error('Status must be either "shortlisted" or "rejected"');

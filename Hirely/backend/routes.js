@@ -64,7 +64,7 @@ router.get('/skills', (req, res) => {
 });
 
 router.get('/applications', (req, res) => {
-  const { employerId, jobId } = req.query;
+  const { employerId, jobId, studentId } = req.query;
 
   if (employerId) {
     const applications = applicationsController.getApplicationsByEmployerId(employerId);
@@ -73,6 +73,11 @@ router.get('/applications', (req, res) => {
 
   if (jobId) {
     const applications = applicationsController.getApplicationsByJobId(jobId);
+    return res.json({ success: true, applications });
+  }
+
+  if (studentId) {
+    const applications = applicationsController.getApplicationsByStudentId(studentId);
     return res.json({ success: true, applications });
   }
 

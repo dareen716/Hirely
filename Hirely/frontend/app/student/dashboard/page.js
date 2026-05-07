@@ -77,7 +77,7 @@ export default function StudentDashboard() {
         </div>
 
         {/* Quick Actions */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <Link href="/student/jobs" className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
             <div className="text-3xl mb-4">💼</div>
             <h3 className="text-xl font-semibold mb-2">Browse Opportunities</h3>
@@ -94,6 +94,12 @@ export default function StudentDashboard() {
             <div className="text-3xl mb-4">📄</div>
             <h3 className="text-xl font-semibold mb-2">Upload CV</h3>
             <p className="text-gray-600 text-sm">{profile?.profile?.cvFilename ? 'Update your CV' : 'Add your CV'}</p>
+          </Link>
+
+          <Link href="/student/applications" className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+            <div className="text-3xl mb-4">📌</div>
+            <h3 className="text-xl font-semibold mb-2">Track Applications</h3>
+            <p className="text-gray-600 text-sm">Monitor your application statuses</p>
           </Link>
         </div>
 
