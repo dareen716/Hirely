@@ -90,6 +90,52 @@ export const postJob = (req, res) => {
   });
 };
 
+export const updateJob = (req, res) => {
+  const { jobId } = req.params;
+  const { employerId, title, type, field, location, description, requirements, salary } = req.body;
+  const jobs = getJobs();
+  const users = getUsers();
+
+  const jobIndex = jobs.findIndex(j => j.id === jobId);
+  if (jobIndex === -1) {
+    return res.status(404).json({ error: 'Job not found' });
+  }
+
+  const existingJob = jobs[jobIndex];
+
+  if (!employerId || existingJob.employerId !== employerId) {
+    return res.status(403).json({ error: 'You can only edit your own jobs' });
+  }
+
+  const employer = users.find(u => u.id === employerId);
+  if (!employer || employer.role !== 'employer') {
+    return res.status(403).json({ error: 'Only employers can update jobs' });
+  }
+
+  if (!title || !type || !field || !location || !description) {
+    return res.status(400).json({ error: 'Missing required fields' });
+  }
+
+  const updatedJob = {
+    ...existingJob,
+    title,
+    type,
+    field,
+    location,
+    description,
+    requirements: requirements || [],
+    salary: salary || 'Negotiable'
+  };
+
+  jobs[jobIndex] = updatedJob;
+  saveJobs(jobs);
+
+  res.json({
+    success: true,
+    job: updatedJob
+  });
+};
+
 export const getFilterOptions = (req, res) => {
   const jobs = getJobs();
   // Return available filter options

@@ -55,6 +55,7 @@ router.post('/profile/:userId/upload-cv', cvUpload.single('cv'), profileControll
 router.get('/jobs', jobsController.getAllJobs);
 router.get('/jobs/:jobId', jobsController.getJobById);
 router.post('/jobs', jobsController.postJob);
+router.put('/jobs/:jobId', jobsController.updateJob);
 router.get('/jobs-filters', jobsController.getFilterOptions);
 
 // ===== SKILLS ROUTE =====

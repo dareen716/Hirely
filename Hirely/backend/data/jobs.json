@@ -92,15 +92,15 @@
       "Express",
       "MongoDB"
     ],
-    "salary": "3000-4000 EGP",
+    "salary": "6000-8000 EGP",
     "createdAt": "2024-04-06T00:00:00.000Z"
   },
   {
     "id": "job-ec01d40b-a6d0-435d-9bb1-e99073585aef",
     "employerId": "user-3",
     "title": "Test Job",
-    "type": "entry-level",
-    "field": "Business",
+    "type": "internship",
+    "field": "Technology",
     "location": "Hurghada",
     "description": "Test job ",
     "requirements": [
@@ -108,7 +108,7 @@
       "People Skills",
       "Test"
     ],
-    "salary": "5000-8000",
+    "salary": "7000-10000",
     "createdAt": "2026-04-15T21:00:36.151Z"
   },
   {
@@ -178,5 +178,29 @@
     "requirements": [],
     "salary": "5000-8000",
     "createdAt": "2026-05-05T21:08:37.634Z"
+  },
+  {
+    "id": "job-fe736594-cf68-42c8-8d1e-e575a55ae642",
+    "employerId": "user-b73a42cc-0c12-4c39-8eb0-d6faeed45da0",
+    "title": "Accountant",
+    "type": "internship",
+    "field": "Finance",
+    "location": "Cairo",
+    "description": "acc",
+    "requirements": [],
+    "salary": "5000-8000",
+    "createdAt": "2026-05-06T00:05:22.733Z"
+  },
+  {
+    "id": "job-f4a9abbf-2fe0-4092-a660-0a4816ce50ce",
+    "employerId": "user-b73a42cc-0c12-4c39-8eb0-d6faeed45da0",
+    "title": "manager",
+    "type": "entry-level",
+    "field": "Business",
+    "location": "Cairo",
+    "description": "manager",
+    "requirements": [],
+    "salary": "5000-8000",
+    "createdAt": "2026-05-06T00:21:29.720Z"
   }
 ]

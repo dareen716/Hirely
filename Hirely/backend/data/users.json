@@ -326,5 +326,31 @@
       "description": "Pharma",
       "location": "Cairo"
     }
+  },
+  {
+    "id": "user-6742363d-4790-416b-b722-dd15caa065a0",
+    "email": "samir@gmail.com",
+    "password": "123",
+    "name": "Samir Yousef",
+    "role": "student",
+    "profile": {
+      "education": "Auc",
+      "skills": [
+        "JavaScript",
+        "Python",
+        "SQL",
+        "Git",
+        "Project Management"
+      ],
+      "projects": [
+        {
+          "title": "project",
+          "description": ""
+        }
+      ],
+      "cvFilename": "cv-user-6742363d-4790-416b-b722-dd15caa065a0-1778026836261-Modes of Preservation  Assignment Lab-8.pdf",
+      "location": "Cairo",
+      "cvFilePath": "/Users/fadysaad/Documents/GitHub/Hirely/Hirely/backend/uploads/cv/cv-user-6742363d-4790-416b-b722-dd15caa065a0-1778026836261-Modes of Preservation  Assignment Lab-8.pdf"
+    }
   }
 ]

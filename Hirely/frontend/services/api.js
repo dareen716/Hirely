@@ -53,6 +53,9 @@ export const jobsService = {
   
   postJob: (jobData) =>
     api.post('/jobs', jobData),
+
+  updateJob: (jobId, jobData) =>
+    api.put(`/jobs/${jobId}`, jobData),
   
   getFilterOptions: () =>
     api.get('/jobs-filters'),

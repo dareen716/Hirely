@@ -152,6 +152,14 @@ export default function EmployerDashboard() {
                   <p className="text-xs text-gray-500 mt-2">
                     Posted {new Date(job.createdAt).toLocaleDateString()}
                   </p>
+                  <div className="mt-3">
+                    <Link
+                      href={`/employer/edit-job/${job.id}`}
+                      className="text-blue-600 hover:text-blue-700 font-semibold text-sm"
+                    >
+                      Edit Post
+                    </Link>
+                  </div>
                 </div>
               ))}
             </div>
